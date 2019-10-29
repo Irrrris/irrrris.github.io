@@ -1,0 +1,40 @@
+---
+title: "Hongyu Zhou"
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+
+Student in Weill Cornell Medicine <br>
+<br>
+
+<br><img src="images/self.jpg" alt="iris" style="width:40%; border:6px solid"><br>
+
+
+
+
+## About
+
+<br>
+
+I received a BS in mathematics from [Michigan State University](https://msu.edu) in 2017 and now is a graduate student in Biostatistics from [Weill Cornell Medicine](http://weill.cornell.edu). 
+<br>
+
+The experience worked in different departments in financial company developed my ability to gather a broader consideration than others. In the process of experiencing three kinds of work in financial systems, including auditing, sales & trading and industry analysis, I became conscious of the insufficiency myself, an rapid growing knowledge of finance, but weak involvement of industries. The major emphasis of my project cases more focused on financial structure, and always stop striving after obtaining a little knowledge about its industry. However the industry part truly raised my curious. Which encourage me to back to school for exploring my real interest in industry part.
+
+More information about my WORKING EXPERIENCE in [Work](Work.html) page.
+
+<br>
+
+Starting from 2019, I study in Weill Cornell Medicine, and majoring in Biostatistics & Data Science. The program spans the gap in my statistics and usage of statistical tools. I was cognizant of my thirst for knowledge is insatiable, and entered a fast-learning phrase. Good learning should include inputs, also outputs, which is the necessary reason I want to share my idea now.
+
+More communication about statistics in [Project](Project.html) page.
+
+<br>
+<br>
+<br>
+My resume is available [here](Resume.pdf)
+
+
+
+

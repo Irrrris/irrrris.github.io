@@ -1,0 +1,25 @@
+name: "Yay internet!"
+output_dir: "."
+navbar:
+  title: "Home"
+  left:
+    - text: "Work Experience"
+      href: Work.html
+    - text: "Project"
+      href: Project.html
+  right:
+    - icon: fa-envelope fa-lg
+      href: mailto:<hoz4004@med.cornell.edu>
+    - icon: fa fa-linkedin-square
+      href: https://www.linkedin.com/in/hongyu-zhou-76135aab/
+    - icon: fa-twitter fa-lg
+      href: https://twitter.com/Iriszhou17
+    - icon: fa-github fa-lg
+      href: https://github.com/Irrrris/irrrris.github.io
+  
+
+
+output:
+  html_document:
+    theme: flatly
+    css: styles.css

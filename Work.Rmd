@@ -1,0 +1,40 @@
+---
+output:
+  html_document:
+    theme: flatly
+    css: styles.css
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<link rel="stylesheet" href="academicons/css/academicons.min.css"/>
+
+<br>
+<br>
+
+#### Prior to joining Weill Cornell Medicine, I worked with two full-time job in China Securities Co.,Ltd for two years and two intership before that. 
+
+<br>
+<br>
+
+## Project Manager in China Securities Co.,Ltd
+<br>
+I worked in sales & trading department, and the majority of my work aimed to enterprises and demonstrated the business trading strategies and financing plans for them. During the time in sales &trading department, I have done 2 pledge of shares, 1 private placement with national equities exchange and quotations, 2 fund custodians for hedge fund, 2 deal originations for enterprise bond. Also, investments were also an important part in my work, I generated portfolio for enterprises based on their risk grade discrimination, capital and expected profits of enterprises. There are two main types of investment depending on the risk level. Low-risk investment would include money funds and fixed income investment, and high-risk investment would include securities margin trading, option and future trading, which improved the investment returns. 
+
+<br>
+<br>
+
+## Data Analysis in China Securities Co.,Ltd
+<br>
+Before I entered the sales & trading department, I worked for almost half year in Human Resource Department for data analysis. I focused on analyzing the demission group and tried to figure out the reason of outflow, and the features of resigning employees, where I assembled 4000 demission data.
+<br>
+<br>
+
+## Internship in Dongxing Securities Co.,Ltd
+<br>
+Experience in Dongxing Securities Co.,Ltd started my exploration in financial analysis for industry, which inspired me to involve more in medical industry. In this intern, I collected data and information for analyzing the tendency of the business the company involved in recent 3 months, including health-care industry, retail industry and agriculture industry. Luckily in the process, I got involved in real cases, and acknowledged a lot about cash flow expenditures, industry trends and changes in industrial chain.
+<br>
+<br>
+
+
+
+

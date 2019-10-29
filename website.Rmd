@@ -1,0 +1,47 @@
+---
+output:
+  html_document:
+    theme: flatly
+    css: styles.css
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<link rel="stylesheet" href="academicons/css/academicons.min.css"/>
+
+<br><img src="images/HVMC_logo_green.png" alt="kinematics" style="width:40%; border:0px solid"><br>
+
+<br>
+
+### **Introduction**
+
+**The website designed with 3 main parts**
+<br>
+
+1. Customization Part
+Customers are free to customize their choice of beef cut and explore the output.
+<br>
+2. Beef Cut Part
+Customers will see a graph of all portions of cattle and their proportions. They could select the type of cut they want to use and see the proportion of it.
+<br>
+3. Environmental Impact Part
+This part includes the Water Use/ Carbon Emissions/ Land Use, which lead customers to see the particular type of impact of beef business.
+
+<br>
+<br>
+
+### **UI of website design**
+Using `shinyDashboard` to build up the theme of the shinyapp. `dashboardSidebar` to setup the side bar name and theme, and `dashboardBody` to setup each `tabItem`. Also using `shinyDashboardThemeDIY` to adjust the color of each panel.
+
+<br>
+<br>
+
+### **Server of website design**
+`shinyServer(function(input, output) {}` is the outer function to control the input and output, each input called in server should be mentioned in ui part, also each output in server should be mentioned in ui part.
+<br>
+All calculations of this website are in the server.
+For plot output, using `renderPlotly`, and for 
+bubbles plot which shown in beef cut part, using `renderBubbles`. And for customization part, `renderInfoBox` used for showing choices results.
+<br>
+<br>
+More details shown in the website:
+https://yih4002.shinyapps.io/midterm/

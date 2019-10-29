@@ -1,0 +1,108 @@
+---
+output:
+  html_document:
+    theme: flatly
+    css: styles.css
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<link rel="stylesheet" href="academicons/css/academicons.min.css"/>
+
+<br><img src="images/test.jpg" alt="iris" style="width:60%; border:0px solid"><br>
+
+<br>
+
+### **4 steps of Hypothesis Testing**
+1. Formulate the null hypothesis $H_0$ (commonly, that the observations are the result of pure chance) and the alternative hypothesis $H_a$ (commonly, that the observations show a real effect combined with a component of chance variation).
+
+2. Identify a test statistic that can be used to assess the truth of the null hypothesis.
+
+3. Compute the p-value, which is the probability that a test statistic at least as significant as the one observed would be obtained assuming that the null hypothesis were true. The smaller the P-value, the stronger the evidence against the null hypothesis.
+
+4. Compare the p-value to an acceptable significance value $\alpha$ (sometimes called an alpha value). If $p\leq \alpha$, that the observed effect is statistically significant, the null hypothesis is ruled out, and the alternative hypothesis is valid. <br>
+
+<br>
+
+### **Method to test --- t.test**
+$\cdot$ Single normal distribution OR Compariance of two normal distributions <br>
+$\cdot$ For single normal distribution, if standard deviation($\sigma$) unknown, using 
+`t.test(x,alternative,mu,conf.level)` <br>
+$\qquad$x=data <br>
+$\qquad$alternative = c("two.sided", "less", "greater") <br>
+$\qquad$mu=a number indicating the true value of the mean <br>
+$\qquad$conf.level $= 1-\alpha$ <br>
+$\cdot$ Comparing the **mean** of two given samples(assume normal distribution) using `t.test(x,y,alternative,mu,paired,conf.level)` $\qquad t-statistic=\frac{x_1-x_2}{\frac{\sigma}{\sqrt{n_1}}+\frac{\sigma}{\sqrt{n_2}}}$ <br>
+$\qquad$x=data_1 <br>
+$\qquad$x=data_2 <br>
+$\qquad$alternative = c("two.sided", "less", "greater") <br>
+$\qquad$mu= difference in means <br>
+$\qquad$conf.level $= 1-\alpha$ <br>
+$\qquad$paired: a logical indicating whether you want a paired t-test <br>
+
+<br>
+
+### **Method to test --- var.test**
+$\cdot$ Comparing the **variance** of two given samples(assume normal distribution) using `t.test(x,y,ratio,alternative,conf.level)`
+$\qquad$x=data_1 <br>
+$\qquad$x=data_2 <br>
+$\qquad$ratio= hypothesized ratio of the population variances of x and y <br>
+$\qquad$alternative = c("two.sided", "less", "greater") <br>
+$\qquad$conf.level $= 1-\alpha$ <br>
+
+<br>
+
+### **Method to test --- binom.test**
+$\cdot$ Single variable <br>
+$\cdot$ Exact computation <br>
+$\cdot$ `binom.test(x,n,p,alternative,conf.level)` <br>
+$\qquad$x=success <br>
+$\qquad$n=ntrails <br>
+$\qquad$p=hypothesized probability of success <br>
+$\qquad$alternative = c("two.sided", "less", "greater") <br>
+$\qquad$conf.level $= 1-\alpha$ <br>
+
+<br>
+
+### **Method to test --- prop.test**
+$\cdot$ Single variable OR Several groups <br>
+$\cdot$ Approximate computation <br>
+$\cdot$ Single variable could be used to test single proportion <br>
+$\cdot$ Several groups could be used to test the difference between samples in proportion <br>
+$\qquad$ If p-value $<\alpha$, then there is sufficient evidence to against then null hypothesis, which proportions are same. Then they differ from each other. <br>
+$\cdot$ `prop.test(x,n,p,alternative,conf.level,correct)` <br>
+$\qquad$x=success OR a vector of counts of successes <br>
+$\qquad$n=ntrails OR a vector of counts of trials <br>
+$\qquad$p=hypothesized probability of success OR a vector of probabilities of success <br>
+$\qquad$alternative = c("two.sided", "less", "greater") <br>
+$\qquad$conf.level $= 1-\alpha$ <br>
+$\qquad$correct: If discrete will be `FALSE`, else will be `TRUE`, works no more than two groups <br>
+
+<br>
+
+### **Method to test --- chisq.test**
+$\cdot$ Association between two samples in proportion <br>
+$\cdot$ Approximate computation <br>
+$\cdot$ Requirement to use Chi-square distribution <br>
+$\qquad$ No more than $\frac{1}{5}$ of the cells have expected values $<5$ <br>
+$\qquad$ No cell has an expected value $<1$ <br>
+$\cdot$ `chisq.test(x,correct,simulate.p.value,B)` <br>
+$\qquad$ x= A **matrix** of the data <br>
+$\qquad$ correct: The corrects for continuity(FALSE in discrete); default is TRUE <br>
+$\qquad$ simulate.p.value: Using Monte Carlo simulation when sample does **not meet the requirement**, which equal to TRUE <br>
+$\qquad$ B= The number of replicates used in the Monte Carlo test
+<br>
+
+<br>
+
+### **Method to test --- fisher.test**
+$\cdot$ Association between two samples in proportion <br>
+$\cdot$ Exact computation <br>
+$\cdot$ **Using when the requirement not met in chi-square test** <br>
+$\cdot$ `fisher.test(x,alternative)` <br>
+$\qquad$ x= A **two-dimensional contingency table** in matrix form of the data <br>
+$\qquad$ alternative = c("two.sided", "less", "greater") <br>
+
+
+
+
+<br>
